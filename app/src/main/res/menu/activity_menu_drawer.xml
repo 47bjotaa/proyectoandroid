@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/logofavorito"
+            android:title="Favoritos" />
+        <item
+            android:id="@+id/nav_Universidades"
+            android:icon="@drawable/unilogobyn"
+            android:title="Universidades" />
+        <item
+            android:id="@+id/nav_Colegios"
+            android:icon="@drawable/colegiobyn"
+            android:title="Colegios" />
+        <item
+            android:id="@+id/nav_Institutos"
+            android:icon="@drawable/intututtutuu"
+            android:title="Intitutos Tecnicos" />
+        <item
+            android:id="@+id/nav_Contactanos"
+            android:icon="@drawable/jajaja"
+            android:title="Contáctanos" />
+        <item
+            android:id="@+id/nav_Servicios"
+            android:icon="@drawable/iconobeca"
+            android:title="Servicios" />
+
+    </group>
+</menu>

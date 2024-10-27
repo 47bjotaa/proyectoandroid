@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#dfccf4">
+
+    <!-- Imagen que representa el logo de la institución -->
+    <ImageView
+        android:id="@+id/ivDetailLogo"
+        android:layout_width="256dp"
+        android:layout_height="201dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Nombre de la institución -->
+    <TextView
+        android:id="@+id/tvDetailNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Ciudad donde se ubica la institución -->
+    <TextView
+        android:id="@+id/tvDetailCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Descripción de la institución -->
+    <TextView
+        android:id="@+id/tvDetailDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Dirección de la institución -->
+    <TextView
+        android:id="@+id/tvDetailDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Teléfono de contacto -->
+    <TextView
+        android:id="@+id/tvDetailTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Sitio web de la institución -->
+    <TextView
+        android:id="@+id/tvDetailSitioWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
