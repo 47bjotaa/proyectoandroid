@@ -16,6 +16,9 @@ import java.util.ArrayList;
 public class FavoritosActivity extends AppCompatActivity {
     private ArrayList<ListadoDeElementos> favoritos; // Lista de favoritos
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,12 +50,15 @@ public class FavoritosActivity extends AppCompatActivity {
         // Crear el adaptador y pasar la lógica para manejar el clic en el ícono de favorito
         ListAdapter adapter = new ListAdapter(favoritos, this, this::onFavoritoClicked);
         recyclerView.setAdapter(adapter);
+
     }
 
     private void onFavoritoClicked(ListadoDeElementos item, int position) {
         // Cambiar el estado de favorito
         item.setFavorito(false); // Desmarcar como favorito
         favoritos.remove(position); // Eliminar de la lista de favoritos
+
+
 
         // Notificar que el elemento fue eliminado
         RecyclerView recyclerView = findViewById(R.id.recyclerViewFavoritos);

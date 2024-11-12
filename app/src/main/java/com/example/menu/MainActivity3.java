@@ -1,6 +1,8 @@
 package com.example.menu;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,13 +25,32 @@ public class MainActivity3 extends AppCompatActivity {
         InstitutosList = new ArrayList<>();
         // Agregar colegios a la lista
         InstitutosList.add(new ListaDeElementos3(
-                "Universidad de la Serena",
+                "AIEP",
                 "La Serena",
-                "Descripción de la Universidad de la Serena",
-                R.drawable.logo_uls_8,
-                "Avenida Raúl Bitrán Nachary",
+                "El Instituto Profesional AIEP en La Serena es una institución de educación superior que ofrece una amplia variedad de programas académicos orientados a la formación técnica y profesional. ",
+                R.drawable.logoaiepnuevo,
+                "Huanhuali 105, La Serena, Coquimbo",
                 "123456789",
-                "http://www.Usn.com"
+                "http://www.aiep.com"
+        ));
+        InstitutosList.add(new ListaDeElementos3(
+                "IpChile",
+                "La Serena",
+                "IPCHILE es una institución acreditada que ofrece carreras técnicas y profesionales, cursos y diplomados en modalidades presencial.",
+                R.drawable.ipchile,
+                "Avenida Francisco de Aguirre 388 1710128 La Serena Coquimbo",
+                "987654321",
+                "http://www.IpChile.com"
+        ));
+
+        InstitutosList.add(new ListaDeElementos3(
+                "Inacap",
+                "La Serena",
+                "INACAP ofrece carreras técnicas, profesionales y de educación continua en diversas áreas y modalidades.",
+                R.drawable.inacap,
+                "Av. Francisco De Aguirre #0389 1700000 La Serena Coquimbo.",
+                "987654321",
+                "http://www.Inacap.com"
         ));
         // Agrega más colegios según sea necesario
 
@@ -44,9 +65,12 @@ public class MainActivity3 extends AppCompatActivity {
         });
         recyclerViewIntitutos.setAdapter(adapter2);
 
-        // Configuración del RecyclerView para instituciones
-        // ... (código existente para configurar el RecyclerView de instituciones)
+
+
     }
 
-    // Resto del código sin cambios
-}
+
+
+
+    }
+

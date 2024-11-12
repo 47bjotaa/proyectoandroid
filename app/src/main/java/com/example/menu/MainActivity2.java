@@ -1,6 +1,8 @@
 package com.example.menu;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -23,37 +25,58 @@ public class MainActivity2 extends AppCompatActivity {
         colegiosList = new ArrayList<>();
         // Agregar colegios a la lista
         colegiosList.add(new ListaDeElementos2(
-                "Universidad de la Serena",
-                "La Serena",
-                "Descripción de la Universidad de la Serena",
-                R.drawable.logo_uls_8,
-                "Avenida Raúl Bitrán Nachary",
-                "123456789",
-                "http://www.Usn.com"
+                "Bernardo O'Higgins",
+                "Coquimbo",
+                "El Colegio Bernardo O'Higgins es una institución educativa ubicada en La Serena, Chile. Ofrece una formación integral a sus estudiantes, enfocándose en valores como la responsabilidad y el respeto. ",
+                R.drawable.logobernardo,
+                "Matta 490",
+                "987654321",
+                "http://www.b_o.com"
         ));
-        // Agrega más colegios según sea necesario
-
-        // Inicializar la lista de instituciones
-        // Agregar instituciones a la lista
-        // ... (código existente para agregar instituciones)
+        colegiosList.add(new ListaDeElementos2(
+                "Geronimo Rendic",
+                "La Serena",
+                "El Colegio Geronimo Rendic es una institución educativa en La Serena, Chile, que se centra en la formación integral de sus estudiantes. Ofrece una sólida educación básica y media, promoviendo valores como la disciplina y el respeto. ",
+                R.drawable.rendic,
+                "Las Casas 986, 1720085 La Serena, Coquimbo",
+                "123123123",
+                "http://www.gr.com"
+        ));
+        colegiosList.add(new ListaDeElementos2(
+                "Gabriel González Videla",
+                "La Serena",
+                "El Colegio Gabriel González Videla es una institución educativa ubicada en La Serena, Chile. Se dedica a proporcionar una educación de calidad, enfocándose en el desarrollo académico y personal de sus estudiantes. Con un ambiente inclusivo, fomenta valores como la solidaridad y el respeto, preparando a sus alumnos para ser ciudadanos responsables y comprometidos con su comunidad.",
+                R.drawable.logogabriel,
+                "Pedro Pablo Muñoz 4",
+                "456456456",
+                "http://www.ggv.com"
+        ));
 
         // Configuración del RecyclerView para colegios
         RecyclerView recyclerViewColegios = findViewById(R.id.listRecycledViewColegios);
         recyclerViewColegios.setLayoutManager(new LinearLayoutManager(this));
+
+
+
 
         // Inicialización del adaptador para colegios
         adapter1 = new listadapter2(colegiosList, this, (item, position) -> {
             item.setFavorito(!item.isFavorito()); // Cambiar el estado de favorito
             adapter1.notifyItemChanged(position);
         });
+
+
+
+
         recyclerViewColegios.setAdapter(adapter1);
 
-        // Configuración del RecyclerView para instituciones
 
 
 
-        // Resto del código sin cambios
+
+
     }
 
-    // Resto del código sin cambios
+
+
 }
